@@ -1,27 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #333;
+  color: #ffffff;
+}
+.nav-title {
+  padding: 5px 20px;
+}
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  .nav{
-      text-align: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  
-  li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+main{
+  margin: 5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+}
+.profile-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.profile-image{
+  text-align: center;
+}
+.message-container h3{
+  text-align: center;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+}
